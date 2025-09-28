@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="score-board">
+            <div class="player-score">
+                <p>You: <span id="player-score">0</span></p>
+            </div>
+            <div class="computer-score">
+                <p>Computer: <span id="computer-score">0</span></p>
+            </div>
+        </div>
+        
+        <div class="camera-controls">
+            <button id="start-camera">Start Camera</button>
+            <button id="stop-camera" style="display:none;">Stop Camera</button>
+        </div>
+        
+        <div class="camera-feed" id="camera-container" style="display:none;">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <div id="prediction-result"></div>
+        </div>
+        
+        <div class="choices">
+            <button class="choice-btn" id="rock"> ROCK </button>
+            <button class="choice-btn" id="paper"> PAPER </button>
+            <button class="choice-btn" id="scissors"> SCISSORS </button>
+        </div>
+        
+        <div class="result-area">
+            <div class="player-choice">
+                <h3>Your Choice</h3>
+                <div id="player-selection"></div>
+            </div>
+            
+            <div class="vs">
+                <h2>VS</h2>
+            </div>
+            
+            <div class="computer-choice">
+                <h3>Computer's Choice</h3>
+                <div id="computer-selection"></div>
+            </div>
+        </div>
+        
+        <div class="result-message">
+            <h2 id="message">Choose your move!</h2>
+        </div>
+        
+        <div class="reset-btn">
+            <button id="reset">Reset Game</button>
+        </div>
+    </div>
+    
+    <!-- Load TensorFlow.js and the model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.1.0"></script>
+    <script src="script.js"></script>
+</body>
+</html>
