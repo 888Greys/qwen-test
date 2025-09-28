@@ -60,3 +60,6 @@ The game uses:
 ## Note
 
 The gesture recognition uses a simplified algorithm based on skin tone detection. For best results, ensure your hand is well-lit and centered in the camera frame. The accuracy may vary depending on lighting conditions and camera quality.
+
+
+test hook
