@@ -62,21 +62,7 @@ The game uses:
 The gesture recognition uses a simplified algorithm based on skin tone detection. For best results, ensure your hand is well-lit and centered in the camera frame. The accuracy may vary depending on lighting conditions and camera quality.
 
 
-test hook(venv) pom@vmi2782277:~/github-commits-listener$ psql -U postgres -h localhost -d mydb
-Password for user postgres:
-psql (16.10 (Ubuntu 16.10-0ubuntu0.24.04.1))
-SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, compression: off)
-Type "help" for help.
 
-mydb=# SELECT * FROM commits;
- id |   repo    |    message     |      timestamp      |     author      |     author_email
-----+-----------+----------------+---------------------+-----------------+----------------------
-  1 | test/repo | Initial commit | 2025-09-28 16:00:00 | Mathew Kipronoh | kipronohm8@gmail.com
-(1 row)
-
-mydb=#
-
-updateds
 
 
 
