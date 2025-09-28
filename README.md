@@ -66,3 +66,4 @@ The gesture recognition uses a simplified algorithm based on skin tone detection
 
 
 
+ok
